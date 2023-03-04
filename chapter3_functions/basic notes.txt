@@ -1,0 +1,43 @@
+basic syntax 
+
+const square = function(x) {
+    return x*x;
+}
+
+For bindings defined outside of any function or block, the scope is
+the whole program—you can refer to such bindings wherever you want. These
+are called global.
+But bindings created for function parameters or declared inside a function
+can be referenced only in that function, so they are known as local bindings.
+
+Declaration notation
+There is a slightly shorter way to create a function binding. When the function
+keyword is used at the start of a statement, it works differently.
+
+function square(x) {
+return x * x;
+}
+
+This is a function declaration.
+
+
+Arrow notation
+
+const power = (base,exponent) =>  {
+    let result = 1;
+    for(let count = 0; count < exponent; count++){
+        result *= base;
+    }
+    return result;
+};
+
+When there is only one parameter name, you can omit the parentheses
+around the parameter list. If the body is a single expression, rather than a
+block in braces, that expression will be returned from the function. So, these
+two definitions of square do the same thing:
+const square1 = (x) => { return x * x; };
+const square2 = x => x * x;
+
+
+closure 
+
