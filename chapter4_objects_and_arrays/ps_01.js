@@ -24,7 +24,7 @@ var range = (a,b) => {
     }
     return list;
 }
-
+//checking 
 console.log(range(2,9))
 
 //part 2
