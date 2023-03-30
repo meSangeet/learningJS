@@ -1,7 +1,0 @@
-Important points -
-
-1. the binding prompt holds a function that shows a little dialog box asking for
-user input.
-
-2. The Number.isNaN function is a standard JavaScript function that returns
-true only if the argument it is given is NaN.
