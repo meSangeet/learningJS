@@ -69,7 +69,6 @@ str.trim() -> the trim method removes whitespace from the start and end of the s
 
 str.repeat(3) -> concatenate the same string and triple it
 
-
 Math object
 
 Math.max(maximum)
@@ -84,7 +83,6 @@ Math.random()  -> returns a pseudorandom number between zero(inclusive) and one(
 Math.floor(a)  -> rounds down to the nearest whole number
 Math.ceil(a) -> rounds up to the nearest whole number
 Math.round() -> round the nearest whole number
-
 
 Destructuring in Javascript
 
@@ -144,7 +142,6 @@ console.log(age); // 30
 
 In the code above, we declare a variable person that contains an object with one property: name. We then use object destructuring to extract the value of the name property of the person object and assign it to the variable name. We also provide a default value of 30 for the age variable, in case the person object does not have an age property.
 
-
 JSON (javascript object notation)
 
 objects and arrays are stored in computer memory as sequencrs of bits holding the addresses of their contents.
@@ -173,4 +170,3 @@ console.log(string);
 // → {"squirrel":false,"events":["weekend"]}
 console.log(JSON.parse(string).events);
 // → ["weekend"]
-
