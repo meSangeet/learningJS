@@ -167,3 +167,25 @@
 // {
 //         console.log(8 + ' x ' + i + ' = ' + 8*i)
 // }
+
+// // for of loop
+
+let num = [1,2,3,4,5,6,7,8,9,10];
+
+// //to check each elements of num array is even or odd
+
+// ///this works as for each loop in c++
+// for(let no of num){
+//     if(no%2 == 0)
+//     {
+//         console.log("Even")
+//     }else console.log("Odd");
+// }
+
+
+// for in loop
+//it gives us indexes in array
+for(let index in num)
+{
+    console.log(index + " -> " + num[index]);
+}

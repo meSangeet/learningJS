@@ -1,4 +1,10 @@
 basic syntax 
+function square(x) {
+    return x*x;
+}
+
+
+Anonymous function -> function with no name
 
 const square = function(x) {
     return x*x;
@@ -72,3 +78,12 @@ but now we don't have a and b   yet if we call z(2) we will get 2 + 4 + 2 = 8. t
 
 
 
+function in an object
+
+const person = {
+    firstName: "John,
+    lastName: "Doe",
+    print: function () {
+        console.log("this function is a property of this object")
+    }
+    };

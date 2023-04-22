@@ -170,3 +170,19 @@ console.log(string);
 // → {"squirrel":false,"events":["weekend"]}
 console.log(JSON.parse(string).events);
 // → ["weekend"]
+
+Javascript allows us to create array with different datatypes
+
+concatenating arrays
+
+array1.concat(array2);
+
+it will return array1 with all elements of array2 pushed back in it
+
+
+splitting array using slice method
+
+arrayName.slice(startindex(included), endindex(excluded));
+
+arrayName(-1)  -> last element
+arrayName(-3)  -> last 2 elements

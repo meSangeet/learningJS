@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .type {
+            font-size: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="type">
+        <span class="text"></span><span>|</span>
+    </div>
+    <script>
+        let target = document.querySelector('.text');
+        let n = 0;
+        let arrayOfPhrases = ["web", "android", "blockchain", "phrase4"]
+
+        let sizeOfPhraseArray = arrayOfPhrases.length;
+
+        let letterIndex = 0;
+        let phraseIndex = 0;
+        function clearLetters(phrase)
+        {
+            if(letterIndex > -1)
+            {
+                let updatedPhrase = "";
+                for(let i = 0; i<letterIndex; i++)
+                {
+                    updatedPhrase += phrase[phraseIndex][i];
+                }
+                letterIndex--;
+                target.textContent = updatedPhrase;
+                setTimeout(()=>{clearLetters(phrase)}, 100)
+            }else{
+                letterIndex++;
+                phraseIndex = (phraseIndex+1)%sizeOfPhraseArray;
+                setTimeout(()=>{typewritter(phrase)}
+            , 100);
+            }
+            
+        }
+        function typewritter(phrase) {
+
+            if(letterIndex === phrase[phraseIndex].length)
+            {
+                clearLetters(phrase);
+            }else if(letterIndex < phrase[phraseIndex].length){
+            target.textContent += phrase[phraseIndex][letterIndex];
+            letterIndex++;
+            setTimeout(()=>{typewritter(phrase)}
+            , 300);
+        }
+        }
+        
+        typewritter(arrayOfPhrases);
+        
+        
+    </script>
+</body>
+
+</html>
