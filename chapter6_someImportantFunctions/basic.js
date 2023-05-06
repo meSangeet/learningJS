@@ -16,4 +16,14 @@ setTimeout(functionRef, delay, param1, param2, ... paramN)
 
 setTimeout((n)=>{
    console.log(n); 
-}, 1000, 1,2,3,4,5,6,7,8,9);
+}, 1000);
+
+
+// type conersion   -> there are two types of type conversion
+
+// implicit conversion -> javascript automatically converts the datatype for eg - 
+let a = "this is 8 now this is converted ";
+a+=8;
+console.log(a);
+// the integer 8 is converted to character before the concatenation and this is done by the javascript itself
+
