@@ -43,3 +43,6 @@ console.log(obj1);
 globalThis.name = 'Global Name'
 //above is the globally declared value of name variable
 myName();
+
+//Order of precedence  new > explicit > implicit > global
+
