@@ -36,7 +36,3 @@ console.log(generatorObj.next(2).value); // Output: "Second value"
 console.log(generatorObj.next(4).value); // Output: 6
 
 //In this case, when we call generator.next(2), the value 2 is passed as the result of the previous yield expression. Similarly, when we call generator.next(4), the value 4 is assigned to the variable y and used in the final yield expression.
-
-
-
-
