@@ -1,4 +1,0 @@
-forms in HTML
-
-it helps us to take input data from the user to the server.
-
