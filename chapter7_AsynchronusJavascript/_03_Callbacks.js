@@ -29,7 +29,7 @@ resultCalculator(3,4,resultDisplay);
 //  Functions running in parallel with other functions are called asynchronous . Instead of passing the name of a function as an argument to another function, you can always pass a whole function instead
 
 
-// Asynchronous programmes are difficult to write and difficult to debug. Because of this, most modern asynchronous JavaScript methods don't use callbacks. Instead, in JavaScript, asynchronous programming is solved using promises instead.
+// Asynchronous programs are difficult to write and difficult to debug. Because of this, most modern asynchronous JavaScript methods don't use callbacks. Instead, in JavaScript, asynchronous programming is solved using promises instead.
 
 
 
