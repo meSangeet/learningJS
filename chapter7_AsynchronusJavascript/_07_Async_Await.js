@@ -21,6 +21,7 @@ const getData = async() => {
     var b = await a;
     console.log(b);
 }
+
 getData();
 console.log(4);
 console.log(5);
